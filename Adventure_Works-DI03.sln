@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adventure_Works-DI03", "Adventure_Works-DI03\Adventure_Works-DI03.csproj", "{7A408A69-4F28-44EE-B07C-3D7828733522}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adventure_Works-DI03_Winforms", "Adventure_Works-DI03_Winforms\Adventure_Works-DI03_Winforms.csproj", "{36F44E0B-E1FB-4CB6-95D3-5BAA0E8E1996}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A408A69-4F28-44EE-B07C-3D7828733522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A408A69-4F28-44EE-B07C-3D7828733522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A408A69-4F28-44EE-B07C-3D7828733522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A408A69-4F28-44EE-B07C-3D7828733522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F44E0B-E1FB-4CB6-95D3-5BAA0E8E1996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F44E0B-E1FB-4CB6-95D3-5BAA0E8E1996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F44E0B-E1FB-4CB6-95D3-5BAA0E8E1996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F44E0B-E1FB-4CB6-95D3-5BAA0E8E1996}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54DCADBB-CA55-4B03-B247-586C5A622299}
+	EndGlobalSection
+EndGlobal

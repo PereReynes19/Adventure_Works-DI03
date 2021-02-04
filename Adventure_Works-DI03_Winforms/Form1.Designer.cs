@@ -29,13 +29,25 @@ namespace Adventure_Works_DI03_Winforms
         /// </summary>
         private void InitializeComponent()
         {
+            this.main_UserControl1 = new Adventure_Works_DI03.Main_UserControl();
             this.SuspendLayout();
+            // 
+            // main_UserControl1
+            // 
+            this.main_UserControl1.BackColor = System.Drawing.SystemColors.GrayText;
+            this.main_UserControl1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.main_UserControl1.Location = new System.Drawing.Point(12, 12);
+            this.main_UserControl1.Name = "main_UserControl1";
+            this.main_UserControl1.Size = new System.Drawing.Size(439, 546);
+            this.main_UserControl1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 450);
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ClientSize = new System.Drawing.Size(653, 629);
+            this.Controls.Add(this.main_UserControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -43,6 +55,8 @@ namespace Adventure_Works_DI03_Winforms
         }
 
         #endregion
+
+        private Adventure_Works_DI03.Main_UserControl main_UserControl1;
     }
 }
 

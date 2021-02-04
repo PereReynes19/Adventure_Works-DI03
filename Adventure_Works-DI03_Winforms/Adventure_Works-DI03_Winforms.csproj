@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adventure_Works-DI03\Adventure_Works-DI03.csproj">
+      <Project>{7A408A69-4F28-44EE-B07C-3D7828733522}</Project>
+      <Name>Adventure_Works-DI03</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

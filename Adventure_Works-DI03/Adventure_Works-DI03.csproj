@@ -46,14 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccesDatabase.cs" />
+    <Compile Include="Classes\AccesDatabase.cs" />
+    <Compile Include="CustomSizeEventArgs.cs" />
     <Compile Include="Main_UserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Main_UserControl.Designer.cs">
       <DependentUpon>Main_UserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductModel.cs" />
+    <Compile Include="Classes\ProductModel.cs" />
+    <Compile Include="Classes\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

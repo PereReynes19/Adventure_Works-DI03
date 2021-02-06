@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using Dapper;
+using System.Diagnostics;
 
 namespace Adventure_Works_DI03
 {
@@ -32,10 +33,41 @@ namespace Adventure_Works_DI03
             {
                 string selct_productModelID = "EXEC sp_getProductModel_ID";
                 ids = conn.Query<int>(selct_productModelID).ToList();
-
-                randomID = ids[rand.Next(ids.Count)];
+                randomID = ids[rand.Next(0, ids.Count)];
                 return randomID;
             } 
         }
+
+        public static List<Product> getProductModel_Sizes(int producctID)
+        {
+            List<Product> ProductSizes = new List<Product>();
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string select_PMsizes = "EXEC sp_getProductModel_Size " + producctID;
+                var productsQuery = conn.Query<Product>(select_PMsizes);
+
+                List<string> result = new List<string>();
+                foreach(var size in productsQuery)
+                {
+                    bool duplicate = false;
+                    foreach (var product in ProductSizes)
+                    {
+                        if (product.Size == size.Size)
+                        {
+                            // This is a duplicate.
+                            duplicate = true;
+                            break;
+                        }
+                    }
+                    // If not duplicate, add to result.
+                    if (!duplicate)
+                    {
+                        ProductSizes.Add(size);
+                    }
+
+                }
+            }
+            return ProductSizes;
+        }
     }
-}
+} 

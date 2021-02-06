@@ -12,5 +12,6 @@ namespace Adventure_Works_DI03
         public string Name { get; set; }
         public float ListPrice { get; set; }
         public byte[] LargePhoto { get; set; }
+        public List<Product> ProductSizes { get; set; }
     }
 }

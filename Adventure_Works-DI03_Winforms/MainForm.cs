@@ -17,12 +17,7 @@ namespace Adventure_Works_DI03_Winforms
         public MainForm()
         {
             InitializeComponent();
-            main_UserControl1.ButtonSizeClicky += getDataFromUserControl;
-        }
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
+            main_UserControl1.ButtonSizeClicky += getDataFromUserControl; //Suscribir al evento 
         }
 
         private void getDataFromUserControl(object sender, CustomSizeEventArgs e)

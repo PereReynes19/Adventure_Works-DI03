@@ -19,7 +19,7 @@ namespace Adventure_Works_DI03
 
         public virtual void OnButtonSizeClicky(CustomSizeEventArgs e)
         {
-            ButtonSizeClicky?.Invoke(this, e);
+            ButtonSizeClicky?.Invoke(this, e); //Invocar el evento
         }
         public Main_UserControl()
         {

@@ -5,4 +5,4 @@
 ## How it works
 -The application's operation is as follows, to generate a new product you must click on the image and so as many times as you want a product.
 
--In the case of the cut, buttons corresponding to the different sizes are automatically generated, once clicks on the button, a custom event is fired which causes you to be shown the product ID in a textbox
+-In the case of the cut, buttons corresponding to the different sizes are automatically generated, once clicks on the button, a custom event is fired which causes you to be shown the product ID in a textbox.
